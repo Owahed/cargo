@@ -1,0 +1,76 @@
+@import url(../index.css);
+
+.navbar-section {
+  position: relative;
+  z-index: 20;
+}
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+
+  a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--black);
+    padding: 0px 12px 0px 12px;
+    text-decoration: none;
+  }
+  .navbar-name > a:first-child {
+    color: var(--orange);
+  }
+
+  span {
+    color: var(--orange);
+    font-size: 30px;
+  }
+  .nav-toggle {
+    position: absolute;
+    top: 2.2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+    .bar {
+      height: 3px;
+      width: 100%;
+      background-color: var(--orange);
+      border-radius: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .height {
+    height: 460px;
+    position: absolute !important;
+    width: 96%;
+    background-color: var(--white);
+  }
+
+  .navbar-name,
+  .login-bar {
+    transition: all 0.4s;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      padding: 0.3rem 0.5rem;
+    }
+  }
+
+  .nav-toggle {
+    display: flex !important;
+  }
+  .active {
+    display: none;
+  }
+}

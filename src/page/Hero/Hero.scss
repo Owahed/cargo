@@ -1,0 +1,125 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+
+  .hero-text {
+    position: relative;
+    width: 42%;
+
+    h3 {
+      font-size: 22px;
+      margin: 0;
+    }
+    h2 {
+      font-size: 52px;
+      line-height: 64px;
+      letter-spacing: -1.56px;
+      margin: 1rem 0;
+
+      span {
+        color: var(--orange);
+      }
+    }
+    p {
+      color: var(--gray);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.24px;
+    }
+    .hero-button button:first-child {
+      margin-right: 10px;
+      font-size: large;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+
+      span {
+        padding-left: 14px;
+      }
+    }
+    .hero-button button:last-child {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      letter-spacing: -0.32px;
+      border-width: 1px;
+      border-radius: 3px 3px 3px 3px;
+      background-color: #161616;
+      box-shadow: 0 10px 15px 0 rgba(158, 158, 158, 0.07);
+      padding: 17px 25px;
+
+      span {
+        padding-left: 14px;
+      }
+    }
+  }
+  .hero-img {
+    position: absolute;
+    right: -383px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 20;
+  }
+}
+.hero-bg-img {
+  right: 0;
+  top: 0;
+  position: absolute;
+  height: 756px;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  padding: 190px 0 230px;
+}
+
+@media only screen and (max-width: 800px) {
+  .hero-img,
+  .hero-bg-img {
+    display: none;
+  }
+  .hero {
+    padding: 19px 0 23px;
+    .hero-text {
+      width: 100%;
+      padding: 20px;
+
+      h2 {
+        font-size: 35px;
+        line-height: 1.2em;
+        font-weight: 800;
+      }
+      p {
+        padding: 30px 0;
+      }
+    }
+    .hero-button {
+      display: flex;
+      justify-content: space-between;
+
+      button:first-child,
+      button:last-child {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero-section img {
+    width: 50%;
+  }
+  .hero-bg-img {
+    display: none;
+  }
+}

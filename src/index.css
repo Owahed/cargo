@@ -1,0 +1,41 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --orange: #ff2119;
+  --black: #010103;
+  --white: #f8f8f8;
+  --gray: #817f91;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  letter-spacing: -0.6px;
+  color-scheme: light dark;
+  color: var(--black);
+  background-color: var(--white);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+.elementor-container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.login-bar > a:last-child,
+.button-color {
+  color: #ffffff;
+  border-style: none;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0px 10px 15px 0px rgba(255, 83, 48, 0.35);
+  background-image: linear-gradient(to right, #ff4c30, #ff6830, #fff, #f3806f);
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+  padding: 15px 30px;
+}
