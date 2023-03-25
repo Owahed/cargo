@@ -1,14 +1,10 @@
-import Navbar from "./components/navbar";
 import "./index.css";
-import Booking from "./page/booking/Booking";
-import Hero from "./page/Hero/Hero";
+import Home from "./page/Home";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <Booking />
+      <Home />
     </div>
   );
 }

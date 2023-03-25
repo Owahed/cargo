@@ -1,0 +1,150 @@
+.booking {
+  background: -webkit-linear-gradient(top, var(--white) 40%, var(--whiteF) 40%);
+}
+.booking-section {
+  background-color: var(--whiteF);
+  padding: 40px 45px 50px 55px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  .booking-bar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    font-weight: 700;
+
+    label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+
+      :first-child {
+        color: var(--orange);
+        margin-right: 10px;
+      }
+    }
+
+    select {
+      background-color: var(--whiteF);
+      border: thin solid #ccd7e6;
+      border-radius: 4px;
+      display: inline-block;
+      font: icon;
+      line-height: 1.5em;
+      padding: 0.5em 3.5em 0.5em 1em;
+      cursor: pointer;
+
+      /* reset */
+
+      margin: 0;
+
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+      background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        radial-gradient(#ddd 70%, transparent 72%);
+      background-position: calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px), calc(100% - 0.5em) 0.5em;
+      background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
+      background-repeat: no-repeat;
+
+      :focus {
+        background-image: linear-gradient(
+            45deg,
+            var(--whiteF) 50%,
+            transparent 50%
+          ),
+          linear-gradient(135deg, transparent 50%, var(--whiteF) 50%),
+          radial-gradient(gray 70%, transparent 72%);
+        background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+          calc(100% - 0.5em) 0.5em;
+        background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
+        background-repeat: no-repeat;
+        border-color: green;
+        outline: 0;
+      }
+    }
+
+    input[type="date"] {
+      display: block;
+      position: relative;
+      padding: 1rem 3.5rem 1rem 0.75rem;
+
+      font-size: 1rem;
+      font-family: monospace;
+
+      border: 1px solid #ccd7e6;
+      border-radius: 0.25rem;
+      background: var(--whiteF)
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='22' viewBox='0 0 20 22'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23688EBB' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' transform='translate(1 1)'%3E%3Crect width='18' height='18' y='2' rx='2'/%3E%3Cpath d='M13 0L13 4M5 0L5 4M0 8L18 8'/%3E%3C/g%3E%3C/svg%3E")
+        right 1rem center no-repeat;
+
+      cursor: pointer;
+    }
+    input[type="date"]:focus {
+      outline: none;
+      border-color: var(--orange);
+      box-shadow: 0 0 0 0.25rem rgba(0, 120, 250, 0.1);
+    }
+
+    ::-webkit-datetime-edit {
+    }
+    ::-webkit-datetime-edit-fields-wrapper {
+    }
+    ::-webkit-datetime-edit-month-field:hover,
+    ::-webkit-datetime-edit-day-field:hover,
+    ::-webkit-datetime-edit-year-field:hover {
+      background: rgba(0, 120, 250, 0.1);
+    }
+    ::-webkit-datetime-edit-text {
+      opacity: 0;
+    }
+    ::-webkit-clear-button,
+    ::-webkit-inner-spin-button {
+      display: none;
+    }
+    ::-webkit-calendar-picker-indicator {
+      position: absolute;
+      width: 2.5rem;
+      height: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+
+      opacity: 0;
+      cursor: pointer;
+
+      color: var(--orange);
+      background: var(--orange);
+    }
+
+    input[type="date"]:hover::-webkit-calendar-picker-indicator {
+      opacity: 0.05;
+    }
+    input[type="date"]:hover::-webkit-calendar-picker-indicator:hover {
+      opacity: 0.15;
+    }
+
+    :last-child {
+      display: flex;
+      align-items: end;
+
+      button {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .booking-section {
+    .booking-bar {
+      grid-template-columns: auto;
+      select {
+        width: 100%;
+      }
+    }
+  }
+}

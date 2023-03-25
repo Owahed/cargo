@@ -4,11 +4,9 @@
   font-weight: 400;
   --orange: #ff2119;
   --black: #010103;
+  --whiteF: #fff;
   --white: #f8f8f8;
   --gray: #817f91;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 
   letter-spacing: -0.6px;
   color-scheme: light dark;
@@ -20,6 +18,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .elementor-container {
   max-width: 1140px;
@@ -38,4 +41,13 @@
   background-size: 300% 100%;
   transition: all 0.4s ease-in-out;
   padding: 15px 30px;
+  cursor: pointer;
+  font-weight: 700;
+}
+p {
+  color: var(--gray);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.24px;
 }

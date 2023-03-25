@@ -3,7 +3,6 @@ import "./navbar.scss";
 
 const Navbar = () => {
   const [value, setValue] = useState(false);
-  console.log(value);
   return (
     <div className="navbar-section elementor-container">
       <div className={value ? "navbar-content  height" : "navbar-content  "}>
