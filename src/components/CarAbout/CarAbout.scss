@@ -1,0 +1,16 @@
+.car-about {
+  background-color: var(--whiteF);
+}
+.car-about-section {
+  display: flex;
+  .car-about-img > img {
+    width: 100%;
+  }
+  .car-about-img :last-child {
+    width: 200px;
+    color: var(--orange);
+    margin-top: -110px;
+    margin-left: 115px;
+    cursor: pointer;
+  }
+}
