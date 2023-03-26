@@ -2,6 +2,10 @@ import React from "react";
 import "./CarAbout.scss";
 import ImageOne from "../../Img/about_image.jpg";
 import { TbBrandYoutube } from "react-icons/tb";
+import car from "../../Img/icon/transportation.png";
+import parking from "../../Img/icon/parking.png";
+import carTwo from "../../Img/icon/car.png";
+import CountUp from "react-countup";
 
 const CarAbout = () => {
   return (
@@ -13,7 +17,7 @@ const CarAbout = () => {
             <TbBrandYoutube size={200} />
           </a>
         </div>
-        <div>
+        <div className="car-about-text">
           <h3>About Company</h3>
           <h1>You start the engine and your adventure begins</h1>
           <p>
@@ -23,15 +27,26 @@ const CarAbout = () => {
             imprudence no precaution. My indulged as disposal strongly attended.
           </p>
           <hr />
-          <div>
+          <div className="car-about-count">
             <div>
-              <img
-                src="https://demo.xpeedstudio.com/carrental/home-v4/wp-content/uploads/sites/5/2020/06/transportation.png"
-                alt=""
-              />
-              <div>
-                <span>20</span>
-                <span>Car Types</span>
+              <img src={car} alt="" />
+              <div className="count-co">
+                <CountUp enableScrollSpy={true} end={20} />
+                <p>Car Types</p>
+              </div>
+            </div>
+            <div>
+              <img src={parking} alt="" />
+              <div className="count-co">
+                <CountUp enableScrollSpy={true} end={85} />
+                <p>Car Types</p>
+              </div>
+            </div>
+            <div>
+              <img src={carTwo} alt="" />
+              <div className="count-co">
+                <CountUp enableScrollSpy={true} end={75} />
+                <p>Car Types</p>
               </div>
             </div>
           </div>

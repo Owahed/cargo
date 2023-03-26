@@ -1,5 +1,6 @@
 .car-about {
   background-color: var(--whiteF);
+  padding: 50px 0;
 }
 .car-about-section {
   display: flex;
@@ -12,5 +13,31 @@
     margin-top: -110px;
     margin-left: 115px;
     cursor: pointer;
+  }
+  .car-about-text {
+    margin-left: 9%;
+
+    hr {
+      border: 0;
+      height: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      margin: 30px 0;
+    }
+
+    .car-about-count {
+      display: flex;
+      justify-content: space-between;
+      .count-co {
+        display: flex;
+        align-items: center;
+        span:first-child {
+          font-size: 52px;
+          font-weight: 700;
+          letter-spacing: -1.56px;
+          margin-right: 20px;
+        }
+      }
+    }
   }
 }
