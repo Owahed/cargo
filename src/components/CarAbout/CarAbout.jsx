@@ -14,7 +14,7 @@ const CarAbout = () => {
         <div className="car-about-img">
           <img src={ImageOne} alt="" />
           <a href="https://www.youtube.com/watch?v=a2S6JMgjPmI" target="_blank">
-            <TbBrandYoutube size={200} />
+            <TbBrandYoutube className="icon-youtube-one" size={200} />
           </a>
         </div>
         <div className="car-about-text">

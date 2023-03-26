@@ -4,16 +4,17 @@
 }
 .car-about-section {
   display: flex;
-  .car-about-img > img {
-    width: 100%;
+
+  .car-about-img {
+    .icon-youtube-one {
+      // width: 200px;
+      color: var(--orange);
+      margin-top: -110px;
+      margin-left: 115px;
+      cursor: pointer;
+    }
   }
-  .car-about-img :last-child {
-    width: 200px;
-    color: var(--orange);
-    margin-top: -110px;
-    margin-left: 115px;
-    cursor: pointer;
-  }
+
   .car-about-text {
     margin-left: 9%;
 
@@ -39,5 +40,25 @@
         }
       }
     }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .car-about-section {
+    display: block;
+    padding: 20px;
+    text-align: center;
+  }
+  .car-about-img {
+    img {
+      width: 100%;
+    }
+    .icon-youtube-one {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .car-about-count {
+    display: block !important;
   }
 }
