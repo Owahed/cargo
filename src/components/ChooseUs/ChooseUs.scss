@@ -1,0 +1,13 @@
+.choose-us {
+  background-image: url(../../Img/road_image.png);
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  padding-bottom: 120px;
+  background-position: bottom;
+  background-position-x: left;
+}
+.choose-us-section {
+  .choose-us-content {
+    display: flex;
+  }
+}

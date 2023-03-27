@@ -1,0 +1,47 @@
+.poster {
+  //   display: flex;
+  width: 100%;
+  position: relative;
+  background-color: #2d2d2d;
+  height: 325px;
+
+  .poster-section-bg-img {
+    background-image: url("../../Img/cta_car_action.png");
+    // background-size: cover;
+
+    // width: 50%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto;
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .poster-text {
+    display: flex;
+    color: var(--whiteF);
+    height: inherit;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .poster {
+    height: 446px;
+    .poster-section-bg-img {
+      background-size: cover;
+    }
+    .poster-text {
+      text-align: center;
+      flex-direction: column;
+      justify-content: center !important;
+    }
+  }
+}

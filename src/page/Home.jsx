@@ -5,6 +5,8 @@ import Navbar from "../components/navbar/navbar";
 import Rental from "../components/rental/Rental";
 import TripPlan from "../components/tripPlan/TripPlan";
 import CarAbout from "../components/CarAbout/CarAbout";
+import Poster from "../components/poster/Poster";
+import ChooseUs from "../components/ChooseUs/ChooseUs";
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
       <TripPlan />
       <Rental />
       <CarAbout />
+      <Poster />
+      <ChooseUs />
     </>
   );
 };
