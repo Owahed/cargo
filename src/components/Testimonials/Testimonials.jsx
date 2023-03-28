@@ -1,4 +1,5 @@
 import "./Testimonials.scss";
+import user from "../../Img/user.png";
 
 import React, { useRef, useState } from "react";
 // Import Swiper React components
@@ -41,15 +42,54 @@ const Testimonials = () => {
               modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper"
             >
-              <SwiperSlide>
-                <h3>
-                  "The rem value is the same as the em value displayed above.
-                  Both units are scalable."
-                </h3>
+              <SwiperSlide className="swiper-slide">
+                <div>
+                  <h3>
+                    "The rem value is the same as the em value displayed above.
+                    Both units are scalable."
+                  </h3>
+                  <div className="tes-user">
+                    <img src={user} alt="" />
+                    <div>
+                      <h4>Kimberly Garcia</h4>
+                      <h6>Boston Area</h6>
+                    </div>
+                  </div>
+                </div>
               </SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <div>
+                  <h3>
+                    "The rem value is the same as the em value displayed above.
+                    Both units are scalable."
+                  </h3>
+                  <div className="tes-user">
+                    <img src={user} alt="" />
+                    <div>
+                      <h4>Kimberly Garcia</h4>
+                      <h6>Boston Area</h6>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <div>
+                  <h3>
+                    "The rem value is the same as the em value displayed above.
+                    Both units are scalable."
+                  </h3>
+                  <div className="tes-user">
+                    <img src={user} alt="" />
+                    <div>
+                      <h4>Kimberly Garcia</h4>
+                      <h6>Boston Area</h6>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              {/* <SwiperSlide>Slide 2</SwiperSlide>
               <SwiperSlide>Slide 3</SwiperSlide>
-              <SwiperSlide>Slide 4</SwiperSlide>
+              <SwiperSlide>Slide 4</SwiperSlide> */}
             </Swiper>
           </>
         </div>

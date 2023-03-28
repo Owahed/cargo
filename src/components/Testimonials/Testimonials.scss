@@ -7,7 +7,38 @@
     margin: 0 230px;
   }
   .slider {
-    height: 200px;
+    height: 300px;
+    margin: 50px 0;
+    // text-align: left;
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: red;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: red;
+    }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide {
+      h3 {
+      }
+      img {
+        width: 90px;
+      }
+      .tes-user {
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+
+        div {
+          margin-left: 20px;
+        }
+      }
+    }
   }
 }
 
@@ -32,4 +63,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media only screen and (max-width: 850px) {
+  .tes-section .tes-text-section {
+    margin: 0 20px;
+  }
 }
