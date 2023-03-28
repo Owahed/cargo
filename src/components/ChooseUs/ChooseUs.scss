@@ -1,13 +1,71 @@
 .choose-us {
   background-image: url(../../Img/road_image.png);
   background-repeat: no-repeat;
-  margin-top: 100px;
+  padding-top: 100px;
   padding-bottom: 120px;
   background-position: bottom;
   background-position-x: left;
+  background-color: var(--whiteF);
 }
 .choose-us-section {
+  .choose-img {
+    width: 100%;
+  }
   .choose-us-content {
     display: flex;
+
+    :first-child {
+      width: 100%;
+    }
+
+    h1 {
+      width: 70%;
+    }
+    p {
+      width: 70%;
+    }
+    button {
+      margin-top: 60px;
+    }
+    .choose-us-option {
+      //   margin-right: 20px;
+      margin: 10px 0;
+
+      div {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 22px;
+        align-items: center;
+        margin: 15px 0;
+
+        img {
+          align-items: center;
+        }
+
+        div {
+          display: grid;
+          grid-template-columns: auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .choose-us-content {
+    margin: 0 20px;
+    display: block !important;
+
+    :first-child {
+      h1 {
+        width: 100%;
+      }
+      p {
+        width: 100%;
+      }
+      button {
+        margin-top: 28px;
+      }
+    }
   }
 }

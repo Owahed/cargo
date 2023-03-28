@@ -7,6 +7,7 @@ import TripPlan from "../components/tripPlan/TripPlan";
 import CarAbout from "../components/CarAbout/CarAbout";
 import Poster from "../components/poster/Poster";
 import ChooseUs from "../components/ChooseUs/ChooseUs";
+import Testimonials from "../components/Testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <CarAbout />
       <Poster />
       <ChooseUs />
+      <Testimonials />
     </>
   );
 };

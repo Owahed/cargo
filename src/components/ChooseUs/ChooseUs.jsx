@@ -10,7 +10,7 @@ const ChooseUs = () => {
     <div className="choose-us">
       <div className="elementor-container choose-us-section">
         <div>
-          <img src={AllCar} alt="" />
+          <img className="choose-img" src={AllCar} alt="" />
         </div>
         <div className="choose-us-content">
           <div>
@@ -23,7 +23,7 @@ const ChooseUs = () => {
             </p>
             <button className="button-color">Find Deals</button>
           </div>
-          <div>
+          <div className="choose-us-option">
             <div>
               <img src={drive} alt="" />
               <div>
