@@ -8,6 +8,7 @@ import CarAbout from "../components/CarAbout/CarAbout";
 import Poster from "../components/poster/Poster";
 import ChooseUs from "../components/ChooseUs/ChooseUs";
 import Testimonials from "../components/Testimonials/Testimonials";
+import DownloadApp from "../components/DownloadApp/DownloadApp";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Poster />
       <ChooseUs />
       <Testimonials />
+      <DownloadApp />
     </>
   );
 };
