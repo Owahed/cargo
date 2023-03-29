@@ -9,6 +9,7 @@ import Poster from "../components/poster/Poster";
 import ChooseUs from "../components/ChooseUs/ChooseUs";
 import Testimonials from "../components/Testimonials/Testimonials";
 import DownloadApp from "../components/DownloadApp/DownloadApp";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <ChooseUs />
       <Testimonials />
       <DownloadApp />
+      <Footer />
     </>
   );
 };

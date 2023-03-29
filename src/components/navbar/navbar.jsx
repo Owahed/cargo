@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="navbar-section elementor-container">
       <div className={value ? "navbar-content  height" : "navbar-content  "}>
         <div>
-          <span>CARRO</span>
+          <span>CAR-RO</span>
         </div>
         <div onClick={() => setValue(!value)} className="nav-toggle ">
           <span className="bar"></span>

@@ -44,7 +44,8 @@
   cursor: pointer;
   font-weight: 700;
 }
-p {
+p,
+.p {
   color: var(--gray);
   font-size: 16px;
   font-weight: 400;

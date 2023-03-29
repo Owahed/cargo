@@ -4,7 +4,7 @@
     background-image: url(../../Img//download-background-image.png);
     width: 100%;
     height: 445px;
-    background-position: right;
+    background-position: top center;
     background-repeat: no-repeat;
   }
   .d-a-text {
@@ -19,5 +19,11 @@
         padding-left: 20px;
       }
     }
+  }
+}
+@media only screen and (max-width: 850px) {
+  .download-app .d-a-text .d-a-content {
+    width: 100%;
+    padding: 0 20px;
   }
 }
