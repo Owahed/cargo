@@ -10,6 +10,7 @@ import ChooseUs from "../components/ChooseUs/ChooseUs";
 import Testimonials from "../components/Testimonials/Testimonials";
 import DownloadApp from "../components/DownloadApp/DownloadApp";
 import Footer from "../components/Footer/Footer";
+import FAQ from "../components/FAQ/FAQ";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <Poster />
       <ChooseUs />
       <Testimonials />
+      <FAQ />
       <DownloadApp />
       <Footer />
     </>

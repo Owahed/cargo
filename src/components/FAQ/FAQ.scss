@@ -1,0 +1,35 @@
+.faq {
+  background-image: url(../../Img/accordian_car.png);
+  background-repeat: no-repeat;
+  background-color: var(--whiteF);
+  padding: 70px 0;
+  background-position: 0 70%;
+
+  .faq-text {
+    text-align: center;
+  }
+  .faq-nested-section {
+    margin-top: 60px;
+
+    display: flex;
+    justify-content: center;
+
+    .faq-nested-component {
+      width: 70%;
+      background-color: var(--whiteF);
+      div {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+      }
+      span {
+        display: flex;
+        justify-content: center;
+      }
+      p {
+        width: 90%;
+      }
+    }
+  }
+}
