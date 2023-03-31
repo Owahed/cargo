@@ -7,7 +7,7 @@ import {
 
 const FAQ = () => {
   const [textShowOne, setTextShowOne] = useState(true);
-  console.log(textShowOne);
+
   return (
     <div className="faq">
       <div className="elementor-container ">
