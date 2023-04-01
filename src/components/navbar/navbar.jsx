@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.scss";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [value, setValue] = useState(false);
@@ -17,7 +18,10 @@ const Navbar = () => {
 
         <div className={value ? "navbar-name" : "navbar-name active"}>
           <a href="/">Home</a>
-          <a href="#">About</a>
+          <a>
+            {" "}
+            <Link to="about">About </Link>
+          </a>
           <a href="/">Vehicle Models</a>
           <a href="#">Testimonials</a>
           <a href="/"> Our team</a>
