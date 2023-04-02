@@ -39,7 +39,7 @@
   box-shadow: 0px 10px 15px 0px rgba(255, 83, 48, 0.35);
   background-image: linear-gradient(to right, #ff4c30, #ff6830, #fff, #f3806f);
   background-size: 300% 100%;
-  transition: all 0.4s ease-in-out;
+  /* transition: all 0.4s ease-in-out; */
   padding: 15px 30px;
   cursor: pointer;
   font-weight: 700;
