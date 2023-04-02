@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./navbar.scss";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [value, setValue] = useState(false);
   return (
     <div className="navbar-section elementor-container">
-      <div className={value ? "navbar-content  height" : "navbar-content  "}>
+      <nav className={value ? "navbar-content  height" : "navbar-content  "}>
         <div>
           <span>CAR-RO</span>
         </div>
@@ -18,11 +18,10 @@ const Navbar = () => {
 
         <div className={value ? "navbar-name" : "navbar-name active"}>
           <a href="/">Home</a>
-          <a>
-            {" "}
-            <Link to="about">About </Link>
-          </a>
-          <a href="/">Vehicle Models</a>
+
+          <NavLink to="about">About </NavLink>
+
+          <a href="/about">Vehicle Models</a>
           <a href="#">Testimonials</a>
           <a href="/"> Our team</a>
           <a href="#">Contact</a>
@@ -32,7 +31,7 @@ const Navbar = () => {
           <a href="#">Sign in </a>
           <a href="#">Register</a>
         </div>
-      </div>
+      </nav>
     </div>
   );
 };
