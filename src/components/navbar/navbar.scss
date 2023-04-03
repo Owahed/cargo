@@ -15,11 +15,11 @@
     padding: 0px 12px 0px 12px;
     text-decoration: none;
   }
-  .navbar-name > a:first-child {
-    color: var(--orange);
-  }
+  // .navbar-name > a:first-child {
+  //   color: var(--orange);
+  // }
 
-  span {
+  .navbar-logo {
     color: var(--orange);
     font-size: 30px;
   }
@@ -41,7 +41,9 @@
     }
   }
 }
-
+.nav-color {
+  color: var(--orange);
+}
 @media only screen and (max-width: 800px) {
   .navbar-content {
     flex-direction: column;

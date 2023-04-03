@@ -8,7 +8,9 @@ const Navbar = () => {
     <div className="navbar-section elementor-container">
       <nav className={value ? "navbar-content  height" : "navbar-content  "}>
         <div>
-          <span>CAR-GO</span>
+          <Link className="navbar-logo" to="/">
+            CAR-GO
+          </Link>
         </div>
         <div onClick={() => setValue(!value)} className="nav-toggle ">
           <span className="bar"></span>
@@ -17,9 +19,23 @@ const Navbar = () => {
         </div>
 
         <div className={value ? "navbar-name" : "navbar-name active"}>
-          <a href="/">Home</a>
+          <NavLink
+            style={({ isActive }) => ({
+              color: isActive ? "var(--orange)" : "var(--black)",
+            })}
+            to="/"
+          >
+            Home
+          </NavLink>
 
-          <NavLink to="about">About </NavLink>
+          <NavLink
+            style={({ isActive }) => ({
+              color: isActive ? "var(--orange)" : "var(--black)",
+            })}
+            to="about"
+          >
+            About{" "}
+          </NavLink>
 
           <a href="/about">Vehicle Models</a>
           <a href="#">Testimonials</a>
