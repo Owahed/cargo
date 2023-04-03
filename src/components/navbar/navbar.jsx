@@ -34,13 +34,40 @@ const Navbar = () => {
             })}
             to="about"
           >
-            About{" "}
+            About
           </NavLink>
-
-          <a href="/about">Vehicle Models</a>
-          <a href="#">Testimonials</a>
-          <a href="/"> Our team</a>
-          <a href="#">Contact</a>
+          <NavLink
+            style={({ isActive }) => ({
+              color: isActive ? "var(--orange)" : "var(--black)",
+            })}
+            to="vehicle-models"
+          >
+            Vehicle Models
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => ({
+              color: isActive ? "var(--orange)" : "var(--black)",
+            })}
+            to="testimonials"
+          >
+            Testimonials
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => ({
+              color: isActive ? "var(--orange)" : "var(--black)",
+            })}
+            to="our-team"
+          >
+            Our team
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => ({
+              color: isActive ? "var(--orange)" : "var(--black)",
+            })}
+            to="contact"
+          >
+            Contact
+          </NavLink>
         </div>
 
         <div className={value ? "login-bar" : "login-bar active"}>
