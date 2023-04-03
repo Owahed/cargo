@@ -15,7 +15,7 @@ import FAQ from "../components/FAQ/FAQ";
 const Home = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <Booking />
       <TripPlan />

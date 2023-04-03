@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="elementor-container ">
         <div className="footer-section">
           <div className="footer-carro">
-            <h2>CAR-RO</h2>
+            <h2>CAR-GO</h2>
             <p>
               Use securing confined his shutters. Delightful as he it acceptance
               an solicitude discretion.
@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
         <div className="footer-icon">
           <p>
-            ©{new Date().getFullYear()} <span>Car-ro.</span>All Rights Reserved
+            ©{new Date().getFullYear()} <span>Car-go.</span>All Rights Reserved
           </p>
           <div className="footerIcons">
             <FaFacebookF />
