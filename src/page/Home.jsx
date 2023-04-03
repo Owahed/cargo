@@ -17,7 +17,7 @@ const Home = () => {
     <>
       <Hero />
       <Booking />
-      <TripPlan />
+      <TripPlan text={"Plan your trip now"} />
       <Rental />
       <CarAbout />
       <Poster />

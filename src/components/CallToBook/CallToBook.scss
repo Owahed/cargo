@@ -1,0 +1,37 @@
+.call-to-book {
+  background-image: url(../../Img/cta-bg-image.png);
+  margin: 200px 0 100px 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2d2d2d;
+  opacity: 0.69;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+
+  .call-to-book-section {
+    color: var(--white);
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      color: var(--whiteF);
+      margin: 0px 0px 0px 0px;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -0.72px;
+    }
+
+    h2:last-child {
+      color: var(--orange);
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .call-to-book-section {
+    flex-direction: column !important;
+    text-align: center;
+  }
+}

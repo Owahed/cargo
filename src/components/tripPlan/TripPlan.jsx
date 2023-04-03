@@ -1,11 +1,11 @@
 import React from "react";
 import "./TripPlan.scss";
-const TripPlan = () => {
+const TripPlan = ({ text }) => {
   return (
     <div className="trip-plan">
       <div className="elementor-container">
         <div>
-          <h3>Plan your trip now</h3>
+          <h3>{text}</h3>
           <h1>Quick & easy car rental</h1>
         </div>
         <div className="trip-section">
