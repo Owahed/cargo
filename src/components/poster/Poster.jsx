@@ -4,7 +4,6 @@ import "./Poster.scss";
 const Poster = () => {
   return (
     <div className="poster">
-      {/* <div></div> */}
       <div className="poster-section-bg-img"></div>
 
       <div className="elementor-container poster-text">

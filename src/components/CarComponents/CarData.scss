@@ -1,0 +1,17 @@
+.car-data {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  margin-top: 80px;
+  padding: 20px;
+}
+@media only screen and (max-width: 900px) {
+  .car-data {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .car-data {
+    grid-template-columns: auto;
+  }
+}
