@@ -37,13 +37,14 @@
 
       span {
         padding-left: 14px;
+        color: var(--whiteF);
       }
     }
     .hero-button button:last-child {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
+      color: var(--whiteF);
       font-size: 16px;
       font-weight: 700;
       line-height: 19px;
@@ -56,6 +57,7 @@
 
       span {
         padding-left: 14px;
+        color: var(--whiteF);
       }
     }
   }
