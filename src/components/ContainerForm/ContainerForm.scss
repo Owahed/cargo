@@ -18,14 +18,16 @@ ul {
 li {
   padding: 0.3em;
 }
-span {
-  font-weight: 700;
-  color: #102a43;
-  line-height: 35px;
-  line-height: 2.5rem;
-  font-size: 12px;
-  font-size: 0.8rem;
-  text-transform: uppercase;
+label {
+  span {
+    font-weight: 700;
+    color: #102a43;
+    line-height: 35px;
+    line-height: 2.5rem;
+    font-size: 12px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
 }
 input[type="submit"] {
   background: var(--orange);
